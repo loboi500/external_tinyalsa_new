@@ -1,23 +1,3 @@
-CROSS_COMPILE ?=
-
-CC = $(CROSS_COMPILE)gcc
-CFLAGS = -Wall -Wextra -Werror -Wfatal-errors -I ../include
-
-VPATH = ../src
-
-EXAMPLES += pcm-readi
-EXAMPLES += pcm-writei
-
-.PHONY: all
-all: $(EXAMPLES)
-
-pcm-readi pcm-writei: LDLIBS+=-ldl
-
-pcm-readi: pcm-readi.c -ltinyalsa
-
-pcm-writei: pcm-writei.c -ltinyalsa
-
-.PHONY: clean
-clean:
-	rm -f $(EXAMPLES)
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:a7ebf58fe6ffd075309b7399939b9a4390e35a4b0fbb842fa366d9a774b97fd5
+size 345

@@ -1,6 +1,3 @@
-option('docs', type: 'feature', value: 'auto', yield: true,
-  description : 'Generate documentation with Doxygen')
-option('examples', type: 'feature', value: 'auto', yield: true,
-  description : 'Build examples')
-option('utils', type: 'feature', value: 'auto', yield: true,
-  description : 'Build utility tools')
+version https://git-lfs.github.com/spec/v1
+oid sha256:6df605b4121ccf5070da7dc4c348ce18c434744cd12b4b69c1d881aa47b7de18
+size 313
